@@ -1,0 +1,13 @@
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: auto; } /* Lenis handles this */
+body {
+  background: #0A160E;
+  color: #F5F0E8;
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
+}
+img { display: block; max-width: 100%; }
+
+/* Text reveal base */
+.reveal-wrapper { overflow: hidden; }
+.reveal-line { display: block; }
