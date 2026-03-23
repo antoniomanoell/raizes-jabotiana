@@ -10,6 +10,7 @@ import { FamilySection } from '../sections/FamilySection';
 import { UnitsSection } from '../sections/UnitsSection';
 import { InteriorSection } from '../sections/InteriorSection';
 import { PrivateAreaSection } from '../sections/PrivateAreaSection';
+import { MapSection } from '../sections/MapSection';
 import { CTASection } from '../sections/CTASection';
 
 export const LandingPage = () => {
@@ -19,6 +20,7 @@ export const LandingPage = () => {
       <HeroSection />
       <ConceptSection />
       <LocationSection />
+      <MapSection />
       <EntranceSection />
       <AerialSection />
       <LeisureSection />

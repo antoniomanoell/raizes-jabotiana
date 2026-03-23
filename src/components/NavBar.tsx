@@ -16,7 +16,13 @@ export const NavBar = () => {
   const isMobile = useIsMobile();
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 80);
+    const onScroll = () => {
+      const ctaSection = document.getElementById('contato');
+      const inCTA = ctaSection
+        ? window.scrollY + window.innerHeight >= ctaSection.offsetTop + 80
+        : false;
+      setScrolled(window.scrollY > 80 && !inCTA);
+    };
     window.addEventListener('scroll', onScroll);
     return () => window.removeEventListener('scroll', onScroll);
   }, []);

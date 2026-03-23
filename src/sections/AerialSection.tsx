@@ -48,7 +48,7 @@ export const AerialSection = () => {
       display: 'flex', flexDirection: 'column',
       alignItems: 'center', justifyContent: 'space-between',
     }}>
-      <ParallaxImage src="/images/img_021.jpg" alt="Vista aérea" />
+      <ParallaxImage src="/images/img_021.jpg" alt="Vista aérea" objectPosition={isMobile ? '55% center' : 'center center'} />
 
       {/* Subtle overlay */}
       <div style={{

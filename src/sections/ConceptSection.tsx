@@ -10,7 +10,7 @@ export const ConceptSection = () => {
       position: 'relative', height: '100vh', overflow: 'hidden',
       display: 'flex', alignItems: 'center', justifyContent: 'center',
     }}>
-      <ParallaxImage src="/images/img_005.jpg" alt="Conceito" />
+      <ParallaxImage src="/images/img_005.jpg" alt="Conceito" objectPosition={isMobile ? '20% center' : 'center center'} />
 
       {/* Overlay */}
       <div style={{

@@ -12,7 +12,7 @@ export const EntranceSection = () => {
       position: 'relative', height: '100vh', overflow: 'hidden',
       display: 'flex', alignItems: 'flex-end',
     }}>
-      <ParallaxImage src="/images/img_006.jpg" alt="Portaria e Segurança" />
+      <ParallaxImage src="/images/img_006.jpg" alt="Portaria e Segurança" objectPosition={isMobile ? '35% center' : 'center center'} />
 
       {/* Bottom gradient */}
       <div style={{
